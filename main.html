@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Emoji</title>
+  <style media="screen">
+    .emoji {
+      width: 160px;
+      height: 160px;
+      display: inline-block;
+      position: relative;
+      background: url('images/23.png');
+    }
+    .emoji-m {
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url('images/23.png');
+      background-position: -960px 0;
+      animation: mouth 1s steps(1) infinite;
+    }
+    .emoji-e {
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url('images/23.png');
+      background-position: -160px 0;
+      animation: eyes 1s steps(1) infinite;
+    }
+
+    @keyframes mouth {
+      0% {background-position: -960px top;}
+      20% {background-position: -1120px top;}
+      40% {background-position: -1280px top;}
+      60% {background-position: -1440px top;}
+      80% {background-position: -1600px top;}
+    }
+    @keyframes eyes {
+      0% {background-position: -160px top;}
+      20% {background-position: -320px top;}
+      40% {background-position: -480px top;}
+      60% {background-position: -640px top;}
+      80% {background-position: -800px top;}
+    }
+  </style>
+  </head>
+  <body>
+    <div class="emoji">
+      <div class="emoji-e"></div>
+      <div class="emoji-m"></div>
+    </div>
+  </body>
+</html>
